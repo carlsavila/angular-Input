@@ -1,0 +1,19 @@
+<h2 style="color: green;">developer works!</h2>
+
+<h3>Developer</h3>
+
+<ul style="list-style: none;">
+    <li>Last name : {{developer01.getFirstname()}}</li>
+    <li>First name : {{developer01.getLastname()}}</li>
+    <li>Age : {{developer01.getAge()}}</li>
+    <li>Gender : {{developer01.getGender()}}</li>
+    <li>Biographie : {{developer01.getBio()}}</li>
+    <ul>
+    @for (skill of developer01.getSkill(); track $index) {
+      <app-skill
+        [skill]="skill">
+      </app-skill>
+    }
+  </ul>
+  </ul>
+
